@@ -103,25 +103,25 @@ VALUES
 -- Populando a tabela Produto_has_Estoque OK
 INSERT INTO ecommerce.produto_has_estoque (fk_idproduto, fk_idestoque, quantidade)
 VALUES
-(1, 1, 10),
-(1, 2, 5),
-(2, 3, 8),
-(2, 4, 12),
-(3, 5, 15),
-(3, 1, 10),
-(4, 2, 5),
-(4, 3, 8),
-(5, 4, 12),
-(5, 5, 15);
+(6, 6, 10),
+(7, 7, 5),
+(8, 8, 8),
+(9, 9, 12),
+(10, 10, 15),
+(7, 6, 10),
+(8, 7, 5),
+(9, 8, 8),
+(10, 9, 12),
+(6, 10, 15);
 
 -- Populando a tabela RelacaoProdutoPedido OK
-INSERT INTO ecommerce.relacao_produto_pedido (fk_idProduto, fk_idPedido, quantidade)
+INSERT INTO ecommerce.pedido_has_produto (fk_idProduto, fk_idPedido, quantidade)
 VALUES
-(1, 1, 2),
-(2, 2, 1),
-(3, 3, 3),
-(4, 4, 7),
-(5, 5, 4);
+(6, 11, 2),
+(7, 11, 1),
+(8, 11, 3),
+(6, 29, 7),
+(8, 29, 4);
 
 -- Populando a tabela TerceiroVendedor
 INSERT INTO ecommerce.terceiro_vendedor (razao_social, cnpj, local)
